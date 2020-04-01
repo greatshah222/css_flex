@@ -52,6 +52,10 @@ cause the first property is for the grow
 .pizza__content{
     flex:1;
     background: white;
+    padding: 35px 30px;
+    display: flex;
+    flex-direction: column;
+   
 
 }
 .pizza__price{
@@ -63,3 +67,52 @@ cause the first property is for the grow
     display: flex;
     align-items: center;
     justify-content: center;}
+
+
+    .pizza__title{
+        display: flex;
+        align-items: center;
+
+    }
+    .pizza__heading{
+        font-size: 20px;
+        margin-right: auto;
+
+    }
+    .pizza__tag{
+        font-size: 10px;
+        text-transform: uppercase;
+        color: white;
+        padding-top: 2px 7px;
+        border-radius: 150px;
+        margin-left: 5px;
+
+    }
+    .pizza__tag--1{ background-color: #4ca2cd;}
+    .pizza__tag--2{background-color: #67b26f;}
+
+    .pizza__description{
+        font-size: 14px;
+        margin: 20px 0;
+    }
+
+    .pizza__details{
+        display: flex;
+        margin-top: auto;
+
+
+    }
+    .pizza__detail{
+        font-size: 15px;
+        text-transform: uppercase;
+        margin-right: 20px;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+
+    }
+    .emoji{
+        font-size: 20px;
+        margin-right: 3px;
+    }
+
