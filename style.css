@@ -1,5 +1,65 @@
+/* Here this import url is from the google fonts where we selected the roberto fonts and then instead of putting it in the html files we put it in the css file. The import button should be beside the embed button in the google fonts website.
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100&display=swap');
+
+/*
+green :#67b26f
+blue: #4ca2cd
+mid: #5aaa9d
+*/
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    color: #444;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    padding: 100px;
+    background: linear-gradient(to bottom right, #67b26f,#4ca2cd);
+    height: 100vh;
+    display: flex;
+    align-items: center; // cross axis
+    justify-content: center; // Main axis
+
+}
+/* Now using flex box property. Here we can define pizza as a parent container and remaining as its child will be flex item*/
+.pizza{
+    max-width: 800px;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 30px 80px 10px rgba(0,0,0,.2);
+
+    display: flex;
+
+}
+.pizza__hero{
+    flex: 0 0 45%;
+
+}
+
+
+.pizza__img{
+    width: 100%;
+    display: block;
+}
+/* Here we are allowing the content to grow to the size of the container so we use flex:1;
+cause the first property is for the grow
+*/
+.pizza__content{
+    flex:1;
+    background: white;
+
+}
+.pizza__price{
+    flex: 0 0 50px;
+    background: linear-gradient(to bottom, #67b26f,#4ca2cd);
+    writing-mode: vertical-rl;
+    color: white;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;}
