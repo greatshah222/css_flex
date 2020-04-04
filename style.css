@@ -83,8 +83,8 @@ cause the first property is for the grow
         font-size: 10px;
         text-transform: uppercase;
         color: white;
-        padding-top: 2px 7px;
-        border-radius: 150px;
+        padding: 2px 7px;
+        border-radius: 100px;
         margin-left: 5px;
 
     }
